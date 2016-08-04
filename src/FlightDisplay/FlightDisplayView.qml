@@ -33,8 +33,8 @@ QGCView {
     QGCPalette { id: qgcPal; colorGroupEnabled: enabled }
 
     property var _activeVehicle:        QGroundControl.multiVehicleManager.activeVehicle
-    property bool _mainIsMap:           _controller.hasVideo ? QGroundControl.loadBoolGlobalSetting(_mainIsMapKey,  true) : true
-    property bool _isPipVisible:        _controller.hasVideo ? QGroundControl.loadBoolGlobalSetting(_PIPVisibleKey, true) : false
+    property bool _mainIsMap:           false //Hardcode to make video main
+    property bool _isPipVisible:        false //Hardcode to hide pip map
 
     property real _roll:                _activeVehicle ? _activeVehicle.roll.value    : _defaultRoll
     property real _pitch:               _activeVehicle ? _activeVehicle.pitch.value   : _defaultPitch
