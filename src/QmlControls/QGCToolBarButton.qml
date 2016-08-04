@@ -40,7 +40,7 @@ Item {
     Rectangle {
         anchors.fill:   parent
         visible:        logo
-        color:          "#4A2C6D"
+        color:          "#24A1F1"
     }
 
     QGCColoredImage {
