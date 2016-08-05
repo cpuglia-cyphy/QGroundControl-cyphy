@@ -28,13 +28,23 @@ Item {
         anchors.fill:   parent
         color:          Qt.rgba(0,0,0,0.75)
         visible:        !_controller.videoRunning
-        QGCLabel {
-            text:               qsTr("NO VIDEO")
-            font.family:        ScreenTools.demiboldFontFamily
-            color:              "white"
-            font.pointSize:     _mainIsMap ? ScreenTools.smallFontPointSize : ScreenTools.largeFontPointSize
-            anchors.centerIn:   parent
+        Image {
+            width:                  parent.width  * 0.6
+            height:                 parent.height * 0.6
+            sourceSize.height:      height
+            fillMode:               Image.PreserveAspectFit
+            id:                     imageItem
+            source:                 "/res/cyphy.png"
+            anchors.centerIn:       parent
         }
+
+//        QGCLabel {
+//            text:               qsTr("NO VIDEO")
+//            font.family:        ScreenTools.demiboldFontFamily
+//            color:              "white"
+//            font.pointSize:     _mainIsMap ? ScreenTools.smallFontPointSize : ScreenTools.largeFontPointSize
+//            anchors.centerIn:   parent
+//        }
     }
     QGCVideoBackground {
         anchors.fill:   parent

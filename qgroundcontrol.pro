@@ -837,3 +837,5 @@ include(QGCSetup.pri)
 #
 
 include(QGCInstaller.pri)
+
+DISTFILES +=

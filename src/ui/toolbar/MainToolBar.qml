@@ -345,15 +345,15 @@ Rectangle {
             onClicked:          toolBar.showSetupView()
         }
 
-        QGCToolBarButton {
-            id:                 planButton
-            width:              mainWindow.tbButtonWidth
-            anchors.top:        parent.top
-            anchors.bottom:     parent.bottom
-            exclusiveGroup:     mainActionGroup
-            source:             "/qmlimages/Plan.svg"
-            onClicked:          toolBar.showPlanView()
-        }
+//        QGCToolBarButton {
+//            id:                 planButton
+//            width:              mainWindow.tbButtonWidth
+//            anchors.top:        parent.top
+//            anchors.bottom:     parent.bottom
+//            exclusiveGroup:     mainActionGroup
+//            source:             "/qmlimages/Plan.svg"
+//            onClicked:          toolBar.showPlanView()
+//        }
 
         QGCToolBarButton {
             id:                 flyButton
